@@ -2,7 +2,7 @@
 .PHONY: cull uncull 
 .PHONY: test.otto- test.v8- digest.json- report
 .PHONY: release gauntlet try try-tmp look copy
-.PHONY: panicking
+.PHONY: panicking shelf
 
 otto := ./otto -underscore=false
 TEST := python ./data/tools/packaging/test262.py --test=data --non_strict_only
@@ -93,3 +93,5 @@ panicking:
 		cp suite/$$panic.js $@; \
 	done
 
+shelf:
+	mv test.otto test.otto.`date +%s`
