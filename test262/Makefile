@@ -31,6 +31,13 @@ test-v8:
 	$(TEST) $(WITH_v8)
 
 test.v8:
+	rm -f data/test/suite/ch15/15.4/15.4.4/15.4.4.20/15.4.4.20-3-14.js
+	rm -f data/test/suite/ch15/15.4/15.4.4/15.4.4.20/15.4.4.20-3-28.js
+	rm -f data/test/suite/ch15/15.4/15.4.4/15.4.4.20/15.4.4.20-3-29.js
+	rm -f data/test/suite/ch15/15.4/15.4.4/15.4.4.20/15.4.4.20-3-8.js
+	rm -rf data/test/suite/ch15/15.4/15.4.4/15.4.4.20
+	rm -rf data/test/suite/ch15/15.4/15.4.4/15.4.4.21
+	rm -rf data/test/suite/ch15/15.4/15.4.4/15.4.4.22
 	$(TEST) $(WITH_v8) | tee $@
 
 test.v8-:
