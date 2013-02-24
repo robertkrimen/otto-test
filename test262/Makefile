@@ -56,8 +56,8 @@ digest.json-:
 	rm -f $(@:-=)
 	$(MAKE) $(@:-=)
 
-report: digest.json
-	@./report < digest.json
+report:
+	./report|less
 
 data:
 	hg clone -r 334 http://hg.ecmascript.org/tests/test262 data
