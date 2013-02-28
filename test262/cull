@@ -113,4 +113,11 @@ rm -f ch08/8.12/8.12.9/8.12.9-9-b-i_1.js
 rm -f ch08/8.12/8.12.9/8.12.9-9-b-i_2.js
 rm -f ch08/8.12/8.12.9/8.12.9-9-c-i_1.js
 
+# 10
+# Skip set/get, for now
+rm -f ch10/10.1/10.1.1/10.1.1-27-s.js
+rm -f ch10/10.1/10.1.1/10.1.1-28-s.js
+# Skip long running
+rm -f ch15/15.4/S15.4_A1.1_T10.js
+
 popd
